@@ -1,0 +1,20 @@
+{
+  "name": "music-player",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "Aimer Neige",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "bootstrap": "^5.2.3",
+    "electron-store": "^8.1.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0"
+  }
+}

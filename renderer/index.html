@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Music Player</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      defer
+      src="../node_modules/@fortawesome/fontawesome-free/js/all.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1>My Music Player</h1>
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button" id="add-music-button">
+          Add New Music
+        </button>
+        <div id="tracks-list" class="mt-4"></div>
+      </div>
+    </div>
+    <div class="container fixed-bottom bg-white">
+      <hr />
+      <div class="row my-2" id="player-status"></div>
+      <div class="progress">
+        <div
+          id="player-progress"
+          class="progress-bar bg-success"
+          role="progressbar"
+          style="width: 0%"
+        >
+          0%
+        </div>
+      </div>
+    </div>
+    <script>
+      require("./index.js");
+    </script>
+  </body>
+</html>
